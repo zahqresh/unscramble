@@ -1,0 +1,19 @@
+<div class="container">
+	<h1>Word Unscrambler</h1>
+<small>Simple, easy and fast word unscrambler!</small>
+	<div class="jumbotron" style="margin-top: 20px;">
+		<form method="post" action="/">
+  <div class="form-group">
+    <label for="word">Enter Word</label>
+    <input type="text" name="word" class="form-control" id="word" aria-describedby="emailHelp">
+   
+  <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Unscramble</button>
+</form>
+
+{{#if data}}
+<h1>unscrambled words!</h1>
+<h1>{{data}}</h1>
+{{/if}}
+
+</div>
+</div>
