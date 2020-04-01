@@ -7,13 +7,129 @@
     <label for="word">Enter Word</label>
     <input type="text" name="word" class="form-control" id="word" aria-describedby="emailHelp">
    
-  <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Unscramble</button>
+  <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Unscramble</button> 
 </form>
 
-{{#if data}}
-<h1>unscrambled words!</h1>
-<h1>{{data}}</h1>
+{{#if bol}}
+<button id="btn" onclick="clear()" class="btn btn-success" style="margin-top: 10px;">Clear</button> 
+{{/if}}
+
+{{#if ten}}
+<div class="card">
+  <div class="card-header">
+    <h1>10 Letter Words</h1>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <p class="card-text">{{ten}}</p>
+  </div>
+</div>
+{{/if}}
+
+{{#if nine}}
+<div class="card">
+  <div class="card-header">
+    <h1>9 Letter Words</h1>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <p class="card-text">{{nine}}</p>
+  </div>
+</div>
+{{/if}}
+
+{{#if eight}}
+<div class="card">
+  <div class="card-header">
+    <h1>9 Letter Words</h1>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <p class="card-text">{{eight}}</p>
+  </div>
+</div>
+{{/if}}
+
+{{#if seven}}
+<div class="card">
+  <div class="card-header">
+    <h1>7 Letter Words</h1>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <p class="card-text">{{seven}}</p>
+  </div>
+</div>
+{{/if}}
+
+{{#if six}}
+<div class="card">
+  <div class="card-header">
+    <h1>6 Letter Words</h1>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <p class="card-text">{{six}}</p>
+  </div>
+</div>
+{{/if}}
+
+{{#if five}}
+<div class="card">
+  <div class="card-header">
+    <h1>5 Letter Words</h1>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <p class="card-text">{{five}}</p>
+  </div>
+</div>
+{{/if}}
+
+{{#if four}}
+<div class="card">
+  <div class="card-header">
+    <h1>4 Letter Words</h1>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <p class="card-text">{{four}}</p>
+  </div>
+</div>
+{{/if}}
+
+{{#if three}}
+<div class="card">
+  <div class="card-header">
+    <h1>3 Letter Words</h1>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <p class="card-text">{{three}}</p>
+  </div>
+</div>
+{{/if}}
+
+{{#if two}}
+<div class="card">
+  <div class="card-header">
+    <h1>2 Letter Words</h1>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <p class="card-text">{{two}}</p>
+  </div>
+</div>
 {{/if}}
 
 </div>
 </div>
+
+<script type="text/javascript">
+	function clear(){
+		$('#card').hide();
+		
+		
+	}
+
+</script>
