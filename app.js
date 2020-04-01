@@ -68,8 +68,8 @@ axios.get(`http://www.anagramica.com/all/:${word}`)
 	if(response.data.all[x].length==3){
 		three.push(response.data.all[x]);
 	}
-	if(response.data.all[x].length==3){
-		three.push(response.data.all[x]);
+	if(response.data.all[x].length==2){
+		two.push(response.data.all[x]);
 	}
 }
 	
